@@ -1,11 +1,14 @@
-import styles from './ui/home.module.css'
 import AcmeLogo from '@/app/ui/acme-logo';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import { inter } from './ui/fonts';
 import Image from 'next/image';
 import InvoiceStatus from './ui/invoices/status';
+import { Metadata } from 'next';
 
+export const metadata: Metadata = {
+  title: 'Acme Main'
+}
 
 export default function Page() {
   return (
